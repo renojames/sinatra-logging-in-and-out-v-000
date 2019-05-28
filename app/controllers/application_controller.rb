@@ -26,7 +26,6 @@ class ApplicationController < Sinatra::Base
     if Helpers.is_logged_in?(session)
       erb :account
     elsif
-      binding.pry
       erb :error
     end
   end
